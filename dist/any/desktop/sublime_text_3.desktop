@@ -1,0 +1,30 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sublime Text 3 Dev
+Name[zh_CN]=Sublime Text 3 开发版
+Name[zh_TW]=Sublime Text 3 開發版
+GenericName=Text Editor
+GenericName[zh_CN]=文本编辑器
+GenericName[zh_TW]=文字編輯器
+Comment=Sophisticated text editor for code, HTML and prose
+Comment[zh_CN]=高端精致的文本(代码、HTML、散文)编辑器
+Comment[zh_TW]=高端精緻的文字(程式碼、HTML、散文)編輯器
+Keywords=Text;Editor;
+Keywords[zh_CN]=文本;编辑器;Text;Editor;
+Keywords[zh_TW]=文字;編輯器;Text;Editor;
+Exec=sublime_text_3 %F
+Terminal=false
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+Icon=sublime-text
+Categories=Development;TextEditor;GTK;
+StartupNotify=true
+Actions=Window;Document;
+
+[Desktop Action Window]
+Name=New Window
+Exec=sublime_text_3 -n
+
+[Desktop Action Document]
+Name=New File
+Exec=sublime_text_3 --command new_file
