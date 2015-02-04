@@ -372,7 +372,7 @@
                 ]
             },
             { "command": "toggle_minimap", "caption": "开启/关闭代码缩略图" },
-            { "command": "toggle_tabs", "caption": "开启/关闭文件选项卡" },
+            { "command": "toggle_tabs", "caption": "开启/关闭文件标签页" },
             { "command": "toggle_status_bar", "caption": "开启/关闭状态栏" },
             { "command": "toggle_menu", "caption": "开启/关闭菜单" },
             { "command": "show_panel", "caption": "开启/关闭控制台", "args": {"panel": "console", "toggle": true} },
@@ -834,7 +834,7 @@
                 {
                     "file": "${packages}/Default/Default ($platform).sublime-keymap"
                 },
-                "caption": "默认热键设置…"
+                "caption": "默认快捷键设置…"
             },
             {
                 "command": "open_file", "args":
@@ -842,7 +842,7 @@
                     "file": "${packages}/User/Default ($platform).sublime-keymap",
                     "contents": "[\n\t$0\n]\n"
                 },
-                "caption": "用户热键设置…"
+                "caption": "用户快捷键设置…"
             },
             { "caption": "-" },
             {
