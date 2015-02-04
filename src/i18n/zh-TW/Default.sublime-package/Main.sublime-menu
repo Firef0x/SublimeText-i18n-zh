@@ -1,21 +1,21 @@
 [
     {
-        "caption": "文件(F)",
+        "caption": "檔案(F)",
         "mnemonic": "F",
         "id": "file",
         "children":
         [
-            { "command": "new_file", "caption": "新建文件(N)", "mnemonic": "N" },
+            { "command": "new_file", "caption": "新建檔案(N)", "mnemonic": "N" },
 
-            { "command": "prompt_open_file", "caption": "打開文件(O)…", "mnemonic": "O", "platform": "!OSX" },
-            { "command": "prompt_open_folder", "caption": "打開文件夾…", "platform": "!OSX" },
-            { "command": "prompt_open", "caption": "打開…", "platform": "OSX" },
+            { "command": "prompt_open_file", "caption": "開啟檔案(O)…", "mnemonic": "O", "platform": "!OSX" },
+            { "command": "prompt_open_folder", "caption": "開啟資料夾…", "platform": "!OSX" },
+            { "command": "prompt_open", "caption": "開啟…", "platform": "OSX" },
             {
-                "caption": "最近打開的文件/文件夾(R)",
+                "caption": "最近開啟的檔案/資料夾(R)",
                 "mnemonic": "R",
                 "children":
                 [
-                    { "command": "reopen_last_file", "caption": "重新打開關閉的文件" },
+                    { "command": "reopen_last_file", "caption": "重新開啟關閉的檔案" },
                     { "caption": "-" },
                     { "command": "open_recent_file", "args": {"index": 0 } },
                     { "command": "open_recent_file", "args": {"index": 1 } },
@@ -39,7 +39,7 @@
                 ]
             },
             {
-                "caption": "用此編碼重新打開",
+                "caption": "用此編碼重新開啟",
                 "children":
                 [
                     { "caption": "UTF-8", "command": "reopen", "args": {"encoding": "utf-8" } },
@@ -75,13 +75,13 @@
                     { "caption": "土耳其語 (ISO 8859-9)", "command": "reopen", "args": {"encoding": "Turkish (ISO 8859-9)" } },
                     { "caption": "越南語 (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
                     { "caption": "-" },
-                    { "caption": "十六進制", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
+                    { "caption": "十六進位碼", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
                 ]
             },
-            { "command": "clone_file", "caption": "復制當前文件到新標簽頁(E)", "mnemonic": "e" },
-            { "command": "save", "caption": "保存(S)", "mnemonic": "S" },
+            { "command": "clone_file", "caption": "複製當前檔案到新分頁(E)", "mnemonic": "e" },
+            { "command": "save", "caption": "儲存(S)", "mnemonic": "S" },
             {
-                "caption": "用此編碼保存",
+                "caption": "用此編碼儲存",
                 "children":
                 [
                     { "caption": "UTF-8", "command": "save", "args": {"encoding": "utf-8" } },
@@ -120,18 +120,18 @@
                     { "caption": "土耳其語 (ISO 8859-9)", "command": "save", "args": {"encoding": "Turkish (ISO 8859-9)" } },
                     { "caption": "越南語 (Windows 1258)", "command": "save", "args": {"encoding": "Vietnamese (Windows 1258)" } },
                     { "caption": "-" },
-                    { "caption": "十六進制", "command": "save", "args": {"encoding": "Hexadecimal" } }
+                    { "caption": "十六進位碼", "command": "save", "args": {"encoding": "Hexadecimal" } }
                 ]
             },
             { "command": "prompt_save_as", "caption": "另存為(A)…", "mnemonic": "A" },
-            { "command": "save_all", "caption": "全部保存(L)", "mnemonic": "l" },
+            { "command": "save_all", "caption": "全部儲存(L)", "mnemonic": "l" },
             { "caption": "-", "id": "window" },
-            { "command": "new_window", "caption": "新建窗口(W)", "mnemonic": "W" },
-            { "command": "close_window", "caption": "關閉窗口" },
+            { "command": "new_window", "caption": "新建視窗(W)", "mnemonic": "W" },
+            { "command": "close_window", "caption": "關閉視窗" },
             { "caption": "-", "id": "close" },
-            { "command": "close", "caption": "關閉文件(C)", "mnemonic": "C" },
-            { "command": "revert", "caption": "恢復文件(V)", "mnemonic": "v" },
-            { "command": "close_all", "caption": "關閉所有文件" },
+            { "command": "close", "caption": "關閉檔案(C)", "mnemonic": "C" },
+            { "command": "revert", "caption": "恢復檔案(V)", "mnemonic": "v" },
+            { "command": "close_all", "caption": "關閉所有檔案" },
             { "caption": "-", "id": "exit" },
             { "command": "exit", "caption": "退出(X)", "mnemonic": "x" }
         ]
@@ -153,34 +153,34 @@
                 ]
             },
             { "caption": "-", "id": "clipboard" },
-            { "command": "copy", "caption": "復制(C)", "mnemonic": "C" },
-            { "command": "cut", "caption": "剪切(N)", "mnemonic": "n" },
-            { "command": "paste", "caption": "粘貼(P)", "mnemonic": "P" },
-            { "command": "paste_and_indent", "caption": "粘貼並自動縮進(I)", "mnemonic": "I" },
-            { "command": "paste_from_history", "caption": "從歷史記錄中粘貼" },
+            { "command": "copy", "caption": "複製(C)", "mnemonic": "C" },
+            { "command": "cut", "caption": "剪下(N)", "mnemonic": "n" },
+            { "command": "paste", "caption": "貼上(P)", "mnemonic": "P" },
+            { "command": "paste_and_indent", "caption": "貼上並自動縮排(I)", "mnemonic": "I" },
+            { "command": "paste_from_history", "caption": "從歷史記錄中貼上" },
             { "caption": "-" },
             {
                 "caption": "行(L)", "mnemonic": "L",
                 "id": "line",
                 "children":
                 [
-                    { "command": "indent", "caption": "縮進" },
-                    { "command": "unindent", "caption": "取消縮進" },
-                    { "command": "reindent", "caption": "再次縮進", "args": {"single_line": true} },
+                    { "command": "indent", "caption": "縮排" },
+                    { "command": "unindent", "caption": "取消縮排" },
+                    { "command": "reindent", "caption": "再次縮排", "args": {"single_line": true} },
                     { "command": "swap_line_up", "caption": "向上切換行" },
                     { "command": "swap_line_down", "caption": "向下切換行" },
-                    { "command": "duplicate_line", "caption": "復制光標所在行" },
+                    { "command": "duplicate_line", "caption": "複製游標所在行" },
                     { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "刪除行" },
-                    { "command": "join_lines", "caption": "合並行" }
+                    { "command": "join_lines", "caption": "合併行" }
                 ]
             },
             {
-                "caption": "註釋(M)", "mnemonic": "m",
+                "caption": "注釋(M)", "mnemonic": "m",
                 "id": "comment",
                 "children":
                 [
-                    { "command": "toggle_comment", "args": {"block": false}, "caption": "單行註釋" },
-                    { "command": "toggle_comment", "args": {"block": true}, "caption": "多行註釋" }
+                    { "command": "toggle_comment", "args": {"block": false}, "caption": "單行注釋" },
+                    { "command": "toggle_comment", "args": {"block": true}, "caption": "多行注釋" }
                 ]
             },
             {
@@ -225,7 +225,7 @@
                 ]
             },
             {
-                "caption": "代碼折疊",
+                "caption": "程式碼折疊",
                 "id": "fold",
                 "children":
                 [
@@ -316,35 +316,35 @@
             { "command": "expand_selection_to_paragraph", "caption": "選擇至段落" },
             { "command": "expand_selection", "args": {"to": "scope"}, "caption": "選擇至節點" },
             { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "選擇至括號" },
-            { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "選擇至縮進" },
+            { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "選擇至縮排" },
             { "command": "expand_selection", "args": {"to": "tag"}, "caption": "選擇至標簽" }
         ]
     },
     {
-        "caption": "查找(I)",
+        "caption": "尋找(I)",
         "mnemonic": "i",
         "id": "find",
         "children":
         [
-            { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "查找…" },
-            { "command": "find_next", "caption": "查找下一個" },
-            { "command": "find_prev", "caption": "查找上一個" },
-            { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "漸進式查找" },
+            { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "尋找…" },
+            { "command": "find_next", "caption": "尋找下一個" },
+            { "command": "find_prev", "caption": "尋找上一個" },
+            { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "漸進式尋找" },
             { "caption": "-" },
-            { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "查找替換…" },
+            { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "尋找替換…" },
             { "command": "replace_next", "caption": "替換下一個" },
             { "caption": "-" },
-            { "command": "find_under", "caption": "快速查找" },
-            { "command": "find_all_under", "caption": "快速查找所有" },
+            { "command": "find_under", "caption": "快速尋找" },
+            { "command": "find_all_under", "caption": "快速尋找所有" },
             { "command": "find_under_expand", "caption": "快速選中下一個" },
             { "command": "find_under_expand_skip", "caption": "快速跳轉到下一個", "platform": "!OSX" },
             { "caption": "-" },
-            { "command": "slurp_find_string", "caption": "在所選內容中查找" },
+            { "command": "slurp_find_string", "caption": "在所選內容中尋找" },
             { "command": "slurp_replace_string", "caption": "在所選內容中替換" },
             { "caption": "-" },
-            { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "在文件中查找…" },
+            { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "在檔案中尋找…" },
             {
-                "caption": "查找結果(R)",
+                "caption": "尋找結果(R)",
                 "mnemonic": "R",
                 "children":
                 [
@@ -356,7 +356,7 @@
         ]
     },
     {
-        "caption": "查看(V)",
+        "caption": "檢視(V)",
         "mnemonic": "V",
         "id": "view",
         "children":
@@ -368,16 +368,16 @@
                 [
                     { "command": "toggle_side_bar", "caption": "顯示/隱藏側邊欄" },
                     { "caption": "-" },
-                    { "command": "toggle_show_open_files", "caption": "顯示/隱藏打開的文件" }
+                    { "command": "toggle_show_open_files", "caption": "顯示/隱藏開啟的檔案" }
                 ]
             },
-            { "command": "toggle_minimap", "caption": "開啟/關閉代碼縮略圖" },
-            { "command": "toggle_tabs", "caption": "開啟/關閉文件選項卡" },
+            { "command": "toggle_minimap", "caption": "開啟/關閉程式碼縮略圖" },
+            { "command": "toggle_tabs", "caption": "開啟/關閉檔案分頁" },
             { "command": "toggle_status_bar", "caption": "開啟/關閉狀態欄" },
-            { "command": "toggle_menu", "caption": "開啟/關閉菜單" },
-            { "command": "show_panel", "caption": "開啟/關閉控制臺", "args": {"panel": "console", "toggle": true} },
+            { "command": "toggle_menu", "caption": "開啟/關閉選單" },
+            { "command": "show_panel", "caption": "開啟/關閉主控台", "args": {"panel": "console", "toggle": true} },
             { "caption": "-", "id": "full_screen" },
-            { "command": "toggle_full_screen", "caption": "切換全屏顯示" },
+            { "command": "toggle_full_screen", "caption": "切換全螢幕顯示" },
             { "command": "toggle_distraction_free", "caption": "切換無幹擾模式" },
             { "caption": "-", "id": "groups" },
             {
@@ -463,12 +463,12 @@
                 ]
             },
             {
-                "caption": "分組",
+                "caption": "群組",
                 "children":
                 [
-                    { "command": "new_pane", "caption": "移動文件到新分組" },
-                    { "command": "new_pane", "caption": "新分組", "args": {"move": false}, "caption": "新分組" },
-                    { "command": "close_pane", "caption": "關閉分組" },
+                    { "command": "new_pane", "caption": "移動檔案到新群組" },
+                    { "command": "new_pane", "caption": "新群組", "args": {"move": false}, "caption": "新群組" },
+                    { "command": "close_pane", "caption": "關閉群組" },
 
                     { "caption": "-" },
 
@@ -505,32 +505,32 @@
                 ]
             },
             {
-                "caption": "焦點分組(F)",
+                "caption": "焦點群組(F)",
                 "mnemonic": "F",
                 "children":
                 [
 
-                    { "command": "focus_neighboring_group", "caption": "下一分組" },
-                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "上一分組" },
+                    { "command": "focus_neighboring_group", "caption": "下一群組" },
+                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "上一群組" },
                     { "caption": "-" },
-                    { "command": "focus_group", "args": {"group": 0}, "caption": "分組 1" },
-                    { "command": "focus_group", "args": {"group": 1}, "caption": "分組 2" },
-                    { "command": "focus_group", "args": {"group": 2}, "caption": "分組 3" },
-                    { "command": "focus_group", "args": {"group": 3}, "caption": "分組 4" }
+                    { "command": "focus_group", "args": {"group": 0}, "caption": "群組 1" },
+                    { "command": "focus_group", "args": {"group": 1}, "caption": "群組 2" },
+                    { "command": "focus_group", "args": {"group": 2}, "caption": "群組 3" },
+                    { "command": "focus_group", "args": {"group": 3}, "caption": "群組 4" }
                 ]
             },
             {
-                "caption": "移動文件到分組(M)",
+                "caption": "移動檔案到群組(M)",
                 "mnemonic": "M",
                 "children":
                 [
-                    { "command": "move_to_neighboring_group", "caption": "下一分組" },
-                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "上一分組" },
+                    { "command": "move_to_neighboring_group", "caption": "下一群組" },
+                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "上一群組" },
                     { "caption": "-" },
-                    { "command": "move_to_group", "args": {"group": 0}, "caption": "分組 1" },
-                    { "command": "move_to_group", "args": {"group": 1}, "caption": "分組 2" },
-                    { "command": "move_to_group", "args": {"group": 2}, "caption": "分組 3" },
-                    { "command": "move_to_group", "args": {"group": 3}, "caption": "分組 4" }
+                    { "command": "move_to_group", "args": {"group": 0}, "caption": "群組 1" },
+                    { "command": "move_to_group", "args": {"group": 1}, "caption": "群組 2" },
+                    { "command": "move_to_group", "args": {"group": 2}, "caption": "群組 3" },
+                    { "command": "move_to_group", "args": {"group": 3}, "caption": "群組 4" }
                 ]
             },
             { "caption": "-" },
@@ -541,12 +541,12 @@
                 "children": [ { "command": "$file_types" } ]
             },
             {
-                "caption": "縮進(I)",
+                "caption": "縮排(I)",
                 "mnemonic": "I",
                 "id": "indentation",
                 "children":
                 [
-                    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "使用空格縮進", "checkbox": true },
+                    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "使用空格縮排", "checkbox": true },
                     { "caption": "-" },
                     { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "制表符寬度: 1", "checkbox": true },
                     { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "制表符寬度: 2", "checkbox": true },
@@ -557,10 +557,10 @@
                     { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "制表符寬度: 7", "checkbox": true },
                     { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "制表符寬度: 8", "checkbox": true },
                     { "caption": "-" },
-                    { "command": "detect_indentation", "caption": "使用緩沖區縮進方式" },
+                    { "command": "detect_indentation", "caption": "使用緩衝區縮排方式" },
                     { "caption": "-" },
-                    { "command": "expand_tabs", "caption": "轉為空格縮進", "args": {"set_translate_tabs": true} },
-                    { "command": "unexpand_tabs", "caption": "轉為制表符縮進", "args": {"set_translate_tabs": true} }
+                    { "command": "expand_tabs", "caption": "轉為空格縮排", "args": {"set_translate_tabs": true} },
+                    { "command": "unexpand_tabs", "caption": "轉為制表符縮排", "args": {"set_translate_tabs": true} }
                 ]
             },
             {
@@ -569,9 +569,9 @@
                 "id": "line_endings",
                 "children":
                 [
-                    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows (CRLF)", "checkbox": true },
-                    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix (LF)", "checkbox": true },
-                    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS X (CR)", "checkbox": true }
+                    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows 換行符 (CRLF)", "checkbox": true },
+                    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix 換行符 (LF)", "checkbox": true },
+                    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS X 換行符 (CR)", "checkbox": true }
                 ]
             },
             { "caption": "-", "id": "settings" },
@@ -621,7 +621,7 @@
             { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "轉跳到指定地方(A)…", "mnemonic": "A" },
             { "caption": "-" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "轉跳到符號處…" },
-            { "command": "goto_symbol_in_project", "caption": "轉跳到項目符號處…" },
+            { "command": "goto_symbol_in_project", "caption": "轉跳到專案符號處…" },
             { "command": "goto_definition", "caption": "轉跳到設定處…" },
             // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "轉跳到詞組…" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "轉跳到行…" },
@@ -630,16 +630,16 @@
             { "command": "jump_forward", "caption": "往前跳" },
             { "caption": "-" },
             {
-                "caption": "切換文件(T)",
+                "caption": "切換檔案(T)",
                 "mnemonic": "t",
                 "id": "switch_file",
                 "children":
                 [
-                    { "command": "next_view", "caption": "下一個文件" },
-                    { "command": "prev_view", "caption": "上一個文件" },
+                    { "command": "next_view", "caption": "下一個檔案" },
+                    { "command": "prev_view", "caption": "上一個檔案" },
                     { "caption": "-" },
-                    { "command": "next_view_in_stack", "caption": "當前組的下一個文件" },
-                    { "command": "prev_view_in_stack", "caption": "當前組的上一個文件" },
+                    { "command": "next_view_in_stack", "caption": "當前組的下一個檔案" },
+                    { "command": "prev_view_in_stack", "caption": "當前組的上一個檔案" },
                     { "caption": "-" },
                     { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]}, "caption": "開關頁眉/執行(H)", "mnemonic": "H" },
                     { "caption": "-" },
@@ -668,33 +668,33 @@
                 ]
             },
             {
-                "caption": "書簽(B)",
+                "caption": "書籤(B)",
                 "mnemonic": "b",
                 "id": "bookmarks",
                 "children":
                 [
-                    { "command": "toggle_bookmark", "caption": "開啟/關閉書簽" },
-                    { "command": "next_bookmark", "caption": "下一個書簽" },
-                    { "command": "prev_bookmark", "caption": "上一個書簽" },
-                    { "command": "clear_bookmarks", "caption": "清除書簽" },
-                    { "command": "select_all_bookmarks", "caption": "全選書簽" },
+                    { "command": "toggle_bookmark", "caption": "開啟/關閉書籤" },
+                    { "command": "next_bookmark", "caption": "下一個書籤" },
+                    { "command": "prev_bookmark", "caption": "上一個書籤" },
+                    { "command": "clear_bookmarks", "caption": "清除書籤" },
+                    { "command": "select_all_bookmarks", "caption": "全選書籤" },
                     { "caption": "-" },
-                    { "command": "select_bookmark", "caption": "選擇書簽0", "args": {"index": 0} },
-                    { "command": "select_bookmark", "caption": "選擇書簽1", "args": {"index": 1} },
-                    { "command": "select_bookmark", "caption": "選擇書簽2", "args": {"index": 2} },
-                    { "command": "select_bookmark", "caption": "選擇書簽3", "args": {"index": 3} },
-                    { "command": "select_bookmark", "caption": "選擇書簽4", "args": {"index": 4} },
-                    { "command": "select_bookmark", "caption": "選擇書簽5", "args": {"index": 5} },
-                    { "command": "select_bookmark", "caption": "選擇書簽6", "args": {"index": 6} },
-                    { "command": "select_bookmark", "caption": "選擇書簽7", "args": {"index": 7} },
-                    { "command": "select_bookmark", "caption": "選擇書簽8", "args": {"index": 8} },
-                    { "command": "select_bookmark", "caption": "選擇書簽9", "args": {"index": 9} },
-                    { "command": "select_bookmark", "caption": "選擇書簽10", "args": {"index": 10} },
-                    { "command": "select_bookmark", "caption": "選擇書簽11", "args": {"index": 11} },
-                    { "command": "select_bookmark", "caption": "選擇書簽12", "args": {"index": 12} },
-                    { "command": "select_bookmark", "caption": "選擇書簽13", "args": {"index": 13} },
-                    { "command": "select_bookmark", "caption": "選擇書簽14", "args": {"index": 14} },
-                    { "command": "select_bookmark", "caption": "選擇書簽15", "args": {"index": 15} }
+                    { "command": "select_bookmark", "caption": "選擇書籤0", "args": {"index": 0} },
+                    { "command": "select_bookmark", "caption": "選擇書籤1", "args": {"index": 1} },
+                    { "command": "select_bookmark", "caption": "選擇書籤2", "args": {"index": 2} },
+                    { "command": "select_bookmark", "caption": "選擇書籤3", "args": {"index": 3} },
+                    { "command": "select_bookmark", "caption": "選擇書籤4", "args": {"index": 4} },
+                    { "command": "select_bookmark", "caption": "選擇書籤5", "args": {"index": 5} },
+                    { "command": "select_bookmark", "caption": "選擇書籤6", "args": {"index": 6} },
+                    { "command": "select_bookmark", "caption": "選擇書籤7", "args": {"index": 7} },
+                    { "command": "select_bookmark", "caption": "選擇書籤8", "args": {"index": 8} },
+                    { "command": "select_bookmark", "caption": "選擇書籤9", "args": {"index": 9} },
+                    { "command": "select_bookmark", "caption": "選擇書籤10", "args": {"index": 10} },
+                    { "command": "select_bookmark", "caption": "選擇書籤11", "args": {"index": 11} },
+                    { "command": "select_bookmark", "caption": "選擇書籤12", "args": {"index": 12} },
+                    { "command": "select_bookmark", "caption": "選擇書籤13", "args": {"index": 13} },
+                    { "command": "select_bookmark", "caption": "選擇書籤14", "args": {"index": 14} },
+                    { "command": "select_bookmark", "caption": "選擇書籤15", "args": {"index": 15} }
                 ]
             },
             { "caption": "-" },
@@ -708,7 +708,7 @@
         "children":
         [
             { "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "命令面板…" },
-            { "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "代碼片段…" },
+            { "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "程式碼片段…" },
             { "caption": "-", "id": "build" },
             {
                 "caption": "編譯系統(U)",
@@ -743,32 +743,32 @@
                     { "command": "prev_result", "caption": "上一個結果(P)", "mnemonic": "P" }
                 ]
             },
-            { "command": "toggle_save_all_on_build", "caption": "編譯時保存全部(A)", "mnemonic": "A", "checkbox": true },
+            { "command": "toggle_save_all_on_build", "caption": "編譯時儲存全部(A)", "mnemonic": "A", "checkbox": true },
             { "caption": "-", "id": "macros" },
-            { "command": "toggle_record_macro", "caption": "錄制宏(M)", "mnemonic": "M" },
-            { "command": "run_macro", "caption": "運行宏(P)", "mnemonic": "P" },
-            { "command": "save_macro", "caption": "保存宏(V)…", "mnemonic": "v" },
+            { "command": "toggle_record_macro", "caption": "錄制巨集(M)", "mnemonic": "M" },
+            { "command": "run_macro", "caption": "運行巨集(P)", "mnemonic": "P" },
+            { "command": "save_macro", "caption": "儲存巨集(V)…", "mnemonic": "v" },
             {
-                "caption": "宏",
+                "caption": "巨集",
                 "children": [ { "command": "$macros" } ]
             },
             { "caption": "-" },
-            { "command": "new_plugin", "caption": "新建插件…" },
-            { "command": "new_snippet", "caption": "新建代碼片段…" },
+            { "command": "new_plugin", "caption": "新建外掛程式…" },
+            { "command": "new_snippet", "caption": "新建程式碼片段…" },
             { "caption": "-", "id": "end" }
         ]
     },
     {
-        "caption": "項目(P)",
+        "caption": "專案(P)",
         "id": "project",
         "mnemonic": "p",
         "children":
         [
-            { "command": "prompt_open_project_or_workspace", "caption": "打開項目(O)…" },
-            { "command": "prompt_switch_project_or_workspace", "caption": "切換項目…" },
-            { "command": "prompt_select_workspace", "caption": "快速切換項目(S)…", "mnemonic": "S" },
+            { "command": "prompt_open_project_or_workspace", "caption": "開啟專案(O)…" },
+            { "command": "prompt_switch_project_or_workspace", "caption": "切換專案…" },
+            { "command": "prompt_select_workspace", "caption": "快速切換專案(S)…", "mnemonic": "S" },
             {
-                "caption": "打開最近項目(R)",
+                "caption": "開啟最近專案(R)",
                 "children":
                 [
                     { "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
@@ -784,47 +784,47 @@
                 ]
             },
             { "caption": "-" },
-            { "command": "save_project_and_workspace_as", "caption": "項目另存為(A)…", "mnemonic": "A" },
-            { "command": "close_workspace", "caption": "關閉項目(C)", "mnemonic": "C" },
-            { "command": "open_file", "args": {"file": "${project}"}, "caption": "編輯項目" },
+            { "command": "save_project_and_workspace_as", "caption": "專案另存為(A)…", "mnemonic": "A" },
+            { "command": "close_workspace", "caption": "關閉專案(C)", "mnemonic": "C" },
+            { "command": "open_file", "args": {"file": "${project}"}, "caption": "編輯專案" },
             { "caption": "-" },
             { "command": "new_window_for_project", "caption": "新建工作空間" },
-            { "command": "save_workspace_as", "caption": "保存工作空間(A)…", "mnemonic": "A" },
+            { "command": "save_workspace_as", "caption": "儲存工作空間(A)…", "mnemonic": "A" },
             { "caption": "-" },
-            { "command": "prompt_add_folder", "caption": "添加文件夾到項目(D)…", "mnemonic": "d" },
-            { "command": "close_folder_list", "caption": "從項目中移除文件夾(M)", "mnemonic": "m" },
-            { "command": "refresh_folder_list", "caption": "刷新文件夾列表(E)", "mnemonic": "e" },
+            { "command": "prompt_add_folder", "caption": "添加資料夾到專案(D)…", "mnemonic": "d" },
+            { "command": "close_folder_list", "caption": "從專案中移除資料夾(M)", "mnemonic": "m" },
+            { "command": "refresh_folder_list", "caption": "刷新資料夾列表(E)", "mnemonic": "e" },
         ]
     },
     {
-        "caption": "設置(N)",
+        "caption": "設定(N)",
         "mnemonic": "n",
         "id": "preferences",
         "children":
         [
             { "command": "open_dir", "args": {"dir": "$packages"}, "caption": "瀏覽資源包(B)…", "mnemonic": "B" },
             { "caption": "-" },
-            { "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"}, "caption": "默認設置…" },
+            { "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"}, "caption": "默認設定…" },
             {
                 "command": "open_file", "args":
                 {
                     "file": "${packages}/User/Preferences.sublime-settings",
                     "contents": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by file type specific settings.\n{\n\t$0\n}\n"
                 },
-                "caption": "用戶設置…"
+                "caption": "用戶設定…"
             },
             {
-                "caption": "更多設置",
+                "caption": "更多設定",
                 "children":
                 [
-                    { "command": "open_file_settings", "caption": "用戶語法設置…" },
+                    { "command": "open_file_settings", "caption": "用戶語法設定…" },
                     {
                         "command": "open_file", "args":
                         {
                             "file": "${packages}/User/Distraction Free.sublime-settings",
                             "contents": "{\n\t$0\n}\n"
                         },
-                        "caption": "用戶無幹擾設置…"
+                        "caption": "用戶無幹擾設定…"
                     }
                 ]
             },
@@ -834,7 +834,7 @@
                 {
                     "file": "${packages}/Default/Default ($platform).sublime-keymap"
                 },
-                "caption": "默認熱鍵設置…"
+                "caption": "默認快速鍵設定…"
             },
             {
                 "command": "open_file", "args":
@@ -842,11 +842,11 @@
                     "file": "${packages}/User/Default ($platform).sublime-keymap",
                     "contents": "[\n\t$0\n]\n"
                 },
-                "caption": "用戶熱鍵設置…"
+                "caption": "用戶快速鍵設定…"
             },
             { "caption": "-" },
             {
-                "caption": "字體",
+                "caption": "字型",
                 "children":
                 [
                     { "command": "increase_font_size", "caption": "增大" },
@@ -862,13 +862,13 @@
         ]
     },
     {
-        "caption": "幫助(H)",
+        "caption": "說明(H)",
         "mnemonic": "H",
         "id": "help",
         "children":
         [
-            { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "在線文檔" },
-            { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "官方微博(Twitter)" },
+            { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "線上文檔" },
+            { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "官方微網誌(Twitter)" },
             { "caption": "-" },
             {
                 "command": "open_file", "args":
