@@ -207,7 +207,7 @@
                 [
                     { "command": "close_tag", "caption": "閉合當前標簽" },
                     { "command": "expand_selection", "args": {"to": "tag"}, "caption": "選擇至標簽對" },
-                    { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "為選中內容添加標簽" }
+                    { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "為選中內容新增標簽" }
                 ]
             },
             {
@@ -215,7 +215,7 @@
                 "id": "mark",
                 "children":
                 [
-                    { "command": "set_mark", "caption": "添加標記" },
+                    { "command": "set_mark", "caption": "新增標記" },
                     { "command": "select_to_mark", "caption": "選擇至標記處" },
                     { "command": "delete_to_mark", "caption": "刪除標記" },
                     { "command": "swap_with_mark", "caption": "交換標記" },
@@ -305,8 +305,8 @@
         "children":
         [
             { "command": "split_selection_into_lines", "caption": "拆分成行" },
-            { "command": "select_lines", "args": {"forward": false}, "caption": "添加前一行" },
-            { "command": "select_lines", "args": {"forward": true}, "caption": "添加後一行" },
+            { "command": "select_lines", "args": {"forward": false}, "caption": "新增前一行" },
+            { "command": "select_lines", "args": {"forward": true}, "caption": "新增後一行" },
             { "command": "single_selection", "caption": "單選" },
             { "command": "invert_selection", "caption": "反選" },
             { "caption": "-" },
@@ -791,7 +791,7 @@
             { "command": "new_window_for_project", "caption": "新建工作空間" },
             { "command": "save_workspace_as", "caption": "儲存工作空間(A)…", "mnemonic": "A" },
             { "caption": "-" },
-            { "command": "prompt_add_folder", "caption": "添加資料夾到專案(D)…", "mnemonic": "d" },
+            { "command": "prompt_add_folder", "caption": "新增資料夾到專案(D)…", "mnemonic": "d" },
             { "command": "close_folder_list", "caption": "從專案中移除資料夾(M)", "mnemonic": "m" },
             { "command": "refresh_folder_list", "caption": "刷新資料夾列表(E)", "mnemonic": "e" },
         ]
