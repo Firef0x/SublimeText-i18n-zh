@@ -21,12 +21,14 @@ For Arch Linux user, just install package [sublime-text-dev-zh-cn][6] or
 [sublime-text-dev-zh-tw][12] from [Arch Linux Chinese Community Repository][13],
 [Firef0x's Arch Linux Repository][7] or from AUR.
 
-Credit
+Credits
 ----------
 [sublime_imfix.c][8] is grabbed from a topic in Sublime Forum - ["Input method support"][9].
 Original author is Cjacker Huang.
 
 Latest Simplified and Traditional Chinese translations are grabbed from [Sublime Text Chinese Forum][10].
+
+Thanks [Iridium Cao][14] for reviewing and correcting Traditional Chinese translations.
 
 [1]: https://github.com/Firef0x/SublimeText-i18n-zh/blob/master/README_zh_CN.md
 [2]: http://www.sublimetext.com
@@ -41,4 +43,5 @@ Latest Simplified and Traditional Chinese translations are grabbed from [Sublime
 [11]: https://github.com/Firef0x/SublimeText-i18n-zh/blob/master/README_zh_TW.md
 [12]: https://aur.archlinux.org/packages/sublime-text-dev-zh-tw
 [13]: https://wiki.archlinux.org/index.php/Unofficial_user_repositories#archlinuxcn
+[14]: https://github.com/iridiumcao
 

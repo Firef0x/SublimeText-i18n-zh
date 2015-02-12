@@ -21,12 +21,14 @@ English description is in [README.md][1].
 或 AUR 中安装软件包 [sublime-text-dev-zh-cn][6] 或 [sublime-text-dev-zh-tw][12] 。
 
 
-版权归属
+版权归属及致谢名单
 ----------
 源文件 [sublime_imfix.c][8] 取自 Sublime Text 官方论坛帖子 -- [《输入法支持》][9]（英语）。
 原作者为 Cjacker Huang。
 
 最新的简体及繁体中文翻译汉化取自 [Sublime Text 中文论坛][10]。
+
+感谢 [Iridium Cao][14] 帮忙审阅及修正繁体中文翻译汉化。
 
 [1]: https://github.com/Firef0x/SublimeText-i18n-zh/blob/master/README.md
 [2]: http://www.sublimetext.com
@@ -41,4 +43,5 @@ English description is in [README.md][1].
 [11]: https://github.com/Firef0x/SublimeText-i18n-zh/blob/master/README_zh_TW.md
 [12]: https://aur.archlinux.org/packages/sublime-text-dev-zh-tw
 [13]: https://wiki.archlinux.org/index.php/Unofficial_user_repositories#archlinuxcn
+[14]: https://github.com/iridiumcao
 
