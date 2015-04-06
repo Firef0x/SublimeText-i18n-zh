@@ -1,4 +1,7 @@
 [
+    { "command": "open_context_url", "caption": "打开当前光标下的网址" },
+    { "command": "context_goto_definition", "caption": "跳转到定义处" },
+    { "caption": "-", "id": "clipboard" },
     { "command": "copy", "caption": "复制" },
     { "command": "cut", "caption": "剪切" },
     { "command": "paste", "caption": "粘贴" },

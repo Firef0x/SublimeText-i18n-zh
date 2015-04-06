@@ -133,7 +133,8 @@
             { "command": "revert", "caption": "Revert File", "mnemonic": "v" },
             { "command": "close_all", "caption": "Close All Files" },
             { "caption": "-", "id": "exit" },
-            { "command": "exit", "mnemonic": "x" }
+            { "command": "exit", "caption": "Exit", "mnemonic": "x", "platform": "Windows" },
+            { "command": "exit", "caption": "Quit", "mnemonic": "Q", "platform": "Linux" },
         ]
     },
     {
@@ -154,7 +155,7 @@
             },
             { "caption": "-", "id": "clipboard" },
             { "command": "copy", "mnemonic": "C" },
-            { "command": "cut", "mnemonic": "n" },
+            { "command": "cut", "mnemonic": "t" },
             { "command": "paste", "mnemonic": "P" },
             { "command": "paste_and_indent", "mnemonic": "I" },
             { "command": "paste_from_history", "caption": "Paste from History" },
@@ -575,7 +576,7 @@
                 ]
             },
             { "caption": "-", "id": "settings" },
-            { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Word Wrap", "mnemonic": "w", "checkbox": true },
+            { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Word Wrap", "mnemonic": "W", "checkbox": true },
             {
                 "caption": "Word Wrap Column",
                 "children":
@@ -641,7 +642,7 @@
                     { "command": "next_view_in_stack", "caption": "Next File in Stack" },
                     { "command": "prev_view_in_stack", "caption": "Previous File in Stack" },
                     { "caption": "-" },
-                    { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]}, "caption": "Switch Header/Implementation", "mnemonic": "H" },
+                    { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Switch Header/Implementation", "mnemonic": "H" },
                     { "caption": "-" },
                     { "command": "select_by_index", "args": { "index": 0 } },
                     { "command": "select_by_index", "args": { "index": 1 } },
@@ -669,7 +670,7 @@
             },
             {
                 "caption": "Bookmarks",
-                "mnemonic": "b",
+                "mnemonic": "B",
                 "id": "bookmarks",
                 "children":
                 [
@@ -725,13 +726,18 @@
                     { "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
                     { "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
                     { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 8}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 9}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 10}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 11}, "checkbox": true },
+                    { "caption": "-" },
                     { "command": "$build_systems" },
                     { "caption": "-" },
                     { "command": "new_build_system", "caption": "New Build System…" }
                 ]
             },
             { "command": "build", "mnemonic": "B" },
-            { "command": "build", "args": {"variant": "Run"}, "mnemonic": "R" },
+            { "command": "build", "args": {"select": true}, "caption": "Build With…" },
             { "command": "exec", "args": {"kill": true}, "caption": "Cancel Build", "mnemonic": "C" },
             {
                 "caption": "Build Results",
@@ -761,7 +767,7 @@
     {
         "caption": "Project",
         "id": "project",
-        "mnemonic": "p",
+        "mnemonic": "P",
         "children":
         [
             { "command": "prompt_open_project_or_workspace", "caption": "Open Project…" },
@@ -780,7 +786,7 @@
                     { "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
                     { "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
                     { "caption": "-" },
-                    { "command": "clear_recent_workspaces", "caption": "Clear Items" }
+                    { "command": "clear_recent_projects_and_workspaces", "caption": "Clear Items" }
                 ]
             },
             { "caption": "-" },
@@ -875,6 +881,7 @@
             { "command": "remove_license"},
             { "caption": "-" },
             { "command": "update_check", "caption": "Check for Updates…", "platform": "!Linux" },
+            { "command": "show_changelog", "caption": "Changelog…" },
             { "command": "show_about_window", "caption": "About Sublime Text", "mnemonic": "A" }
         ]
     }

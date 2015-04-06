@@ -133,7 +133,8 @@
             { "command": "revert", "caption": "恢復檔案(V)", "mnemonic": "v" },
             { "command": "close_all", "caption": "關閉所有檔案" },
             { "caption": "-", "id": "exit" },
-            { "command": "exit", "caption": "退出(X)", "mnemonic": "x" }
+            { "command": "exit", "caption": "退出(X)", "mnemonic": "x", "platform": "Windows" },
+            { "command": "exit", "caption": "退出(Q)", "mnemonic": "Q", "platform": "Linux" },
         ]
     },
     {
@@ -154,7 +155,7 @@
             },
             { "caption": "-", "id": "clipboard" },
             { "command": "copy", "caption": "複製(C)", "mnemonic": "C" },
-            { "command": "cut", "caption": "剪下(N)", "mnemonic": "n" },
+            { "command": "cut", "caption": "剪下(T)", "mnemonic": "t" },
             { "command": "paste", "caption": "貼上(P)", "mnemonic": "P" },
             { "command": "paste_and_indent", "caption": "貼上並自動縮排(I)", "mnemonic": "I" },
             { "command": "paste_from_history", "caption": "從歷史記錄中貼上" },
@@ -575,7 +576,7 @@
                 ]
             },
             { "caption": "-", "id": "settings" },
-            { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "自動換行(W)", "mnemonic": "w", "checkbox": true },
+            { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "自動換行(W)", "mnemonic": "W", "checkbox": true },
             {
                 "caption": "自動換行字數",
                 "children":
@@ -613,18 +614,18 @@
         ]
     },
     {
-        "caption": "轉跳(G)",
+        "caption": "跳轉(G)",
         "mnemonic": "G",
         "id": "goto",
         "children":
         [
-            { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "轉跳到指定地方(A)…", "mnemonic": "A" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "跳轉到指定地方(A)…", "mnemonic": "A" },
             { "caption": "-" },
-            { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "轉跳到符號處…" },
-            { "command": "goto_symbol_in_project", "caption": "轉跳到專案符號處…" },
-            { "command": "goto_definition", "caption": "轉跳到設定處…" },
-            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "轉跳到詞組…" },
-            { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "轉跳到行…" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "跳轉到符號處…" },
+            { "command": "goto_symbol_in_project", "caption": "跳轉到專案符號處…" },
+            { "command": "goto_definition", "caption": "跳轉到定義處…" },
+            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "跳轉到詞組…" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "跳轉到行…" },
             { "caption": "-" },
             { "command": "jump_back", "caption": "往後跳" },
             { "command": "jump_forward", "caption": "往前跳" },
@@ -641,7 +642,7 @@
                     { "command": "next_view_in_stack", "caption": "當前組的下一個檔案" },
                     { "command": "prev_view_in_stack", "caption": "當前組的上一個檔案" },
                     { "caption": "-" },
-                    { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]}, "caption": "開關頁眉/執行(H)", "mnemonic": "H" },
+                    { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]}, "caption": "切換標頭檔/原始檔(H)", "mnemonic": "H" },
                     { "caption": "-" },
                     { "command": "select_by_index", "args": { "index": 0 } },
                     { "command": "select_by_index", "args": { "index": 1 } },
@@ -669,7 +670,7 @@
             },
             {
                 "caption": "書籤(B)",
-                "mnemonic": "b",
+                "mnemonic": "B",
                 "id": "bookmarks",
                 "children":
                 [
@@ -725,13 +726,18 @@
                     { "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
                     { "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
                     { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 8}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 9}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 10}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 11}, "checkbox": true },
+                    { "caption": "-" },
                     { "command": "$build_systems" },
                     { "caption": "-" },
                     { "command": "new_build_system", "caption": "新建編譯系統…" }
                 ]
             },
             { "command": "build", "caption": "編譯(B)", "mnemonic": "B" },
-            { "command": "build", "caption": "運行(R)", "args": {"variant": "Run"}, "mnemonic": "R" },
+            { "command": "build", "args": {"select": true}, "caption": "編譯自…" },
             { "command": "exec", "args": {"kill": true}, "caption": "取消編譯(C)", "mnemonic": "C" },
             {
                 "caption": "編譯結果(R)",
@@ -761,7 +767,7 @@
     {
         "caption": "專案(P)",
         "id": "project",
-        "mnemonic": "p",
+        "mnemonic": "P",
         "children":
         [
             { "command": "prompt_open_project_or_workspace", "caption": "開啟專案(O)…" },
@@ -780,7 +786,7 @@
                     { "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
                     { "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
                     { "caption": "-" },
-                    { "command": "clear_recent_workspaces", "caption": "清除記錄" }
+                    { "command": "clear_recent_projects_and_workspaces", "caption": "清除記錄" }
                 ]
             },
             { "caption": "-" },
@@ -883,6 +889,7 @@
             { "command": "remove_license", "caption": "移除授權"},
             { "caption": "-" },
             { "command": "update_check", "caption": "檢查更新…", "platform": "!Linux" },
+            { "command": "show_changelog", "caption": "更新日誌…" },
             { "command": "show_about_window", "caption": "關於 Sublime Text", "mnemonic": "A" }
         ]
     }

@@ -1,4 +1,7 @@
 [
+    { "command": "open_context_url", "caption": "開啟當前游標下的網址" },
+    { "command": "context_goto_definition", "caption": "跳轉到定義處" },
+    { "caption": "-", "id": "clipboard" },
     { "command": "copy", "caption": "複製" },
     { "command": "cut", "caption": "剪下" },
     { "command": "paste", "caption": "貼上" },

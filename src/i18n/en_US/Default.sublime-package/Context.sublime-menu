@@ -1,4 +1,7 @@
 [
+    { "command": "open_context_url" },
+    { "command": "context_goto_definition", "caption": "Goto Definition" },
+    { "caption": "-", "id": "clipboard" },
     { "command": "copy" },
     { "command": "cut" },
     { "command": "paste" },
