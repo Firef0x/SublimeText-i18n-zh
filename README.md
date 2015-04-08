@@ -4,7 +4,7 @@ Sublime Text Chinese translations
 简体中文说明见 [README_zh_CN.md][1].
 繁體中文說明見 [README_zh_TW.md][11].
 
-Current version: Build 3065
+Current version: Build 3083
 
 IM bugfix
 ----------
