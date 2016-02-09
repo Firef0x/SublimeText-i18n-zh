@@ -19,6 +19,7 @@ MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;tex
 Icon=sublime-text
 Categories=Development;TextEditor;GTK;
 StartupNotify=true
+StartupWMClass="sublime-text"
 Actions=Window;Document;
 
 [Desktop Action Window]
